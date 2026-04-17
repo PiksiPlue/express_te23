@@ -8,7 +8,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/about", (req, res) => {
-  console.log("Haha");
+  console.log("HejHej");
 
   res.send("This is the about page for a really aawesome teacher!!!");
 });
