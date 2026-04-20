@@ -18,25 +18,6 @@ app.get("/about", (req, res) => {
   res.send("This is the about page for a really aawesome teacher!!!");
 });
 
-
-// Deleting Data, Lektion 6
-
-app.delete("/tasks/:id", (req, res) => {
-  const id = req.params.id;
-  
-  const taskIndex = tasks.findIndex(
-    t => t.id == id
-  );
-  
-  if (taskIndex === -1){
-    return res.status(404).send("Task not found")
-  }
-
-  tasks.splice(taskIndex, 1);
-  res.status(200).send("Task succesfully deleted")
-})
-// Slutet av Lektion 6
-
 // ---Tasks finns här---
 app.delete("/tasksuppgifter/:id", (req, res) => { //Lektion Delete Data
   const id = Number(req.params.id)
