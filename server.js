@@ -6,7 +6,9 @@ const PORT = 3000;
 let tasks = [
   { id:1, namn: "Pavle", År: 18 },
   { id:2, namn: "Elliot", År: 19 },
-  { id:3, namn: "Ingela", År: 41 }
+  { id:3, namn: "Ingela", År: 41 },
+  { id:4, namn: "Antonio", År: 41 },
+  { id:5, namn: "MAtt", År: 41 }
 ];
 
 
